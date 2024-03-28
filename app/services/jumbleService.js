@@ -3,13 +3,17 @@ import { Jumble } from "../models/jumble.js";
 
 
 class JumbleService {
-    createJumble(jumbleData)
+    createJumble(JumbleData) {
 
-    console.log('service creating jumble' jumbleData);
-    const createJumble = new Jumble(jumbleData)
+        console.log(JumbleData);
+
+        const createJumble = new Jumble(JumbleData)
+        console.log(createJumble);
+        AppState.jumbles.push(createJumble)
+        this.createJumble
 
 
-
+    }
 
 
 }
