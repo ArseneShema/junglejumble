@@ -1,4 +1,4 @@
-import { Jumble } from './models/jumble.js'
+import { Jumble } from './models/Jumble.js'
 import { EventEmitter } from './utils/EventEmitter.js'
 import { createObservableProxy } from './utils/ObservableProxy.js'
 
@@ -29,21 +29,10 @@ class ObservableAppState extends EventEmitter {
 
 
   ]
-
+  /** @type {Jumble} */
+  activeJumble = null
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

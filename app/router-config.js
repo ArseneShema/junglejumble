@@ -1,15 +1,13 @@
-import { ExamplesController } from "./controllers/ExamplesController.js";
-import { JumbleController } from "./controllers/JumbleController.js";
+
+import { JumblesController } from "./controllers/JumblesController.js";
 import { Router } from "./utils/Router.js";
 
 
 export const router = new Router([
   {
     path: '',
-    controllers: [JumbleController,],
-    view: 'app/views/Jumbleview.html'
-
-
+    controllers: [JumblesController],
+    view: 'app/views/JumblesView.html'
   },
   {
     path: '#/about',
